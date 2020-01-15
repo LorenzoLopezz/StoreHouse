@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+button, input, textarea, select {
+    outline: none;
+}
+
+.modal-container {
+    width: 98%;
+    position: fixed;
+    z-index: 3000;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal {
+    color: white;
+    padding: 10px;
+    margin: 10% auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 0px 20px rgba(0,0,0,.2);
+}
+
+.modal > .row {
+    padding: 10px 0.5em;
+}
+
+.modal-container-hidden {
+    width: 98%;
+    opacity: 0;
+    z-index: -3000;
+    position: fixed;
+    margin-top: -500px;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-bar {
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(239,239,239);
+}
+
+.modal-bar > div > h5 {
+    color: black;
+    margin:0;
+}
+
+.in_hidden {
+    position: fixed;
+    z-index: -1000;
+    margin-left: -1000px;
+}
+
+.nameFiles {
+    color: #BEC3CA;
+    list-style: none;
+    text-align: left;
+}
+
+.label_files {
+    padding: 5px;
+    cursor: pointer;
+    border: dotted 1px #4B6A78;
+}
+
+.label_files > h5 {
+    color: #4B6A78;
+    margin: 0;
+}
+
+.inputDefault {
+    width: 100%;
+    padding: 5px;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(239,239,239);
+    border-style: solid;
+    transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.inputDefault:focus {
+    border-color: #1D03D8;
+    transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.btn_send {
+    border: 0;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    background: #57C785;
+}
+
+.btn_invisible {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_invisible:hover {
+    color: white;
+    background: #4B6A78;
+    transition: all 0.3s ease-in-out;
+}
