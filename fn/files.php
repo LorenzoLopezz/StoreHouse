@@ -17,6 +17,7 @@
             define('DB', 'archivos');
             define('TABLE', 'elementos');
             define('RAIZ', 'files/');
+            define('URL', 'http://localhost/portfolio_personal/proyects/Storehouse/');
             // Conexión MySQL, podría usarse otro tipo de BD, como SQLite, pero se tendrá que cambiar todo el módelo
             $this->con = new mysqli(SERVER,USER,PASSWORD,DB);
         }
@@ -270,7 +271,7 @@
                             <div class="row">
                                 <div class="col-xs-4"><button onclick="query({\'query\':\'deleteFiles\',\'id\':\''.$id_archivo.'\'});"><i class="material-icons">delete</i></button></div>
                                 <div class="col-xs-4"><a href="'.RAIZ.'default/'.$dir_file_short.'" download><button><i class="material-icons">save</i></button></a></div>
-                                <div class="col-xs-4"><button onclick="shareFile(\'http://localhost/portfolio_personal/proyects/familyDrive/'.RAIZ.'default/'.$dir_file_short.'\');"><i class="material-icons">share</i></button></div>
+                                <div class="col-xs-4"><button onclick="shareFile(\''.URL.RAIZ.'default/'.$dir_file_short.'\');"><i class="material-icons">share</i></button></div>
                             </div>
                         </div>
                     </div>
